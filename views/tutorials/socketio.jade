@@ -1,0 +1,24 @@
+extends ../layout
+
+block content  
+  link(rel="stylesheet", href="/stylesheets/socket.IoTutorialStyle.css")
+  script(src!= '/javascripts/libs/socket.io.min.js') 
+  script(src!= '/javascripts/libs/p5.js') 
+  script(src!= '/javascripts/libs/p5.sound.js') 
+  
+
+  main
+   div.game-screen.column
+      div.row
+        div#game-canvas
+
+      div.row
+        div#chat 
+          ul#messages 
+          form#form(action="")
+            input#input(type="text" autocomplete="off")
+            button Send 
+
+
+  script(src!= '/javascripts/socket.ioTutorial/sketch.js')
+  script(src!= '/javascripts/socket.ioTutorial/chat.js')

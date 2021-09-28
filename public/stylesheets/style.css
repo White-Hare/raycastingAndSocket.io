@@ -1,0 +1,57 @@
+body {
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  body{
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+a {
+  color: #00B7FF;
+}
+
+
+div.game-screen {
+  width: 100%;
+  min-height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.menu {
+  padding: 50px;
+  margin: 30px;
+
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+div.links-container {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+div.column{
+  display: flex;
+  flex-direction: column;
+}
+
+div.row {
+  display: flex;
+  flex-direction: row;
+}
+
+div.row> div {
+  margin: 2px;
+  padding: 20px;
+  text-align: center;
+}

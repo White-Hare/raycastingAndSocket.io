@@ -1,0 +1,21 @@
+extends layout
+
+block content  
+  main
+    div.game-screen
+      div.menu
+        div.title
+          h1 #{title} 
+
+        div.links-container.column
+          div.row
+            div
+              a(href="/tutorials/tutorial1") Tutorial 1
+            div
+              a(href="/tutorials/raycasting") Raycasting
+          
+          div.row
+            div
+              a(href="/tutorials/socketio") Socket.io
+            div
+              a(href="/tutorials/csstutorial") CSS Tutorial
